@@ -1,0 +1,16 @@
+name: Fecha en consola
+
+on:
+  schedule:
+    - cron: "*/2****"
+  push:
+    branches-ignore:
+      - main          
+
+jobs:
+  mostrar-fecha:
+    runs-on: windows-latest
+
+    steps:
+      - name: Mostrar fecha 
+        run: date
