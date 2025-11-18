@@ -2,7 +2,7 @@ name: Fecha en consola
 
 on:
   schedule:
-    - cron: "*/2****"
+    - cron: "*/2 * * * *"
   push:
     branches-ignore:
       - main          
